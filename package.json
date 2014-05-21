@@ -1,0 +1,30 @@
+{
+  "name": "express-dyngodb",
+  "version": "0.1.1",
+  "description": "Simple dyngodb middleware for express",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/aaaristo/express-dyngodb"
+  },
+  "keywords": [
+    "dyngodb",
+    "express",
+    "middleware"
+  ],
+  "author": "aaaristo",
+  "license": "Apache2",
+  "bugs": {
+    "url": "https://github.com/aaaristo/express-dyngodb/issues"
+  },
+  "homepage": "https://github.com/aaaristo/express-dyngodb",
+  "dependencies": {
+    "aws-sdk": "^2.0.0-rc.17",
+    "dyngodb2": "^0.1.9",
+    "optimist": "^0.6.1",
+    "underscore": "^1.6.0"
+  }
+}
