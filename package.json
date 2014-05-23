@@ -1,6 +1,6 @@
 {
   "name": "express-dyngodb",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Simple dyngodb middleware for express",
   "main": "index.js",
   "scripts": {
@@ -23,7 +23,7 @@
   "homepage": "https://github.com/aaaristo/express-dyngodb",
   "dependencies": {
     "aws-sdk": "^2.0.0-rc.17",
-    "dyngodb2": "^0.1.9",
+    "dyngodb2": "^0.1.10",
     "optimist": "^0.6.1",
     "underscore": "^1.6.0"
   }

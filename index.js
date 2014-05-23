@@ -28,14 +28,20 @@ module.exports= function (opts)
         }
     });
 
-    return function (req, res, next)
+    return function waitForGdb(req, res, next)
     {
         if (gerr)
           next(gerr);
         else
+        if (gdb)
         {
            req.db= gdb;
            next();
         }
+        else
+           setTimeout(function ()
+           {
+              waitForGdb(req,res,next);
+           },100);
     };
 };
