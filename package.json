@@ -23,8 +23,10 @@
   "homepage": "https://github.com/aaaristo/express-dyngodb",
   "dependencies": {
     "aws-sdk": "^2.0.0-rc.17",
-    "dyngodb2": "^0.1.10",
     "optimist": "^0.6.1",
     "underscore": "^1.6.0"
+  },
+  "peerDependencies": {
+    "dyngodb2": "^0.1.10"
   }
 }
