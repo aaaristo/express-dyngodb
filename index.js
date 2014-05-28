@@ -13,7 +13,12 @@ module.exports= function (opts)
     var gerr, gdb, ooops= function (err) { gerr= err; };
  
     if (argv.local)
-      _.extend(opts,{ dynamo: { endpoint: new AWS.Endpoint('http://localhost:8000') } });
+    {
+       if (opts.dynamo)
+         _.extend(opts.dynamo,{ endpoint: new AWS.Endpoint('http://localhost:8000') });
+       else
+         _.extend(opts,{ dynamo: { endpoint: new AWS.Endpoint('http://localhost:8000') } });
+    }
 
     dyngodb(opts,function (err,db)
     {
